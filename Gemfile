@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '6.0.3.4'
-gem 'bootstrap'
+gem 'rails', '6.0.4.6'
+gem 'bootstrap', '>= 4.5.2'
 gem 'attr_encrypted'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'pagy'
 gem 'local_time'
 gem 'octicons_helper', '9.6.0'
 gem 'octokit'
 gem 'omniauth-github'
-gem 'puma'
-gem 'sassc-rails'
+gem 'puma', '>= 5.6.2'
+gem 'sassc-rails', '>= 2.1.2'
 gem 'turbolinks'
 gem 'typhoeus'
 gem 'faraday_middleware'
@@ -21,11 +21,11 @@ gem 'jbuilder'
 gem 'rake', require: false
 gem 'git'
 gem 'rgb'
-gem 'sidekiq'
-gem 'sidekiq-unique-jobs'
-gem 'sidekiq-scheduler', require: false
+gem 'sidekiq', '>= 6.4.0'
+gem 'sidekiq-unique-jobs', '>= 6.0.24'
+gem 'sidekiq-scheduler', '>= 3.0.1', require: false
 gem 'rack-canonical-host'
-gem 'sidekiq-status'
+gem 'sidekiq-status', '>= 1.1.4'
 gem 'gemoji', require: false
 gem 'bootsnap', require: false
 gem 'bugsnag'
@@ -37,11 +37,11 @@ gem 'pg', '1.2.3'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
   gem 'guard'
   gem 'guard-minitest'
-  gem 'rails-controller-testing'
-  gem 'sql_queries_count'
+  gem 'rails-controller-testing', '>= 1.0.5'
+  gem 'sql_queries_count', '>= 0.0.1'
   gem 'active_record_query_trace'
 end
 
@@ -54,7 +54,7 @@ group :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 4.0.4'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
@@ -66,6 +66,6 @@ end
 
 group :production do
   gem 'skylight', '4.3.1'
-  gem 'lograge'
-  gem 'puma_worker_killer'
+  gem 'lograge', '>= 0.11.2'
+  gem 'puma_worker_killer', '>= 0.3.1'
 end
