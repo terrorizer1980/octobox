@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '6.0.3.4'
+gem 'rails', '6.0.4.7'
 gem 'bootstrap'
 gem 'attr_encrypted'
 gem 'jquery-rails'
@@ -10,7 +10,7 @@ gem 'local_time'
 gem 'octicons_helper', '9.6.0'
 gem 'octokit'
 gem 'omniauth-github'
-gem 'puma'
+gem 'puma', '>= 5.6.4'
 gem 'sassc-rails'
 gem 'turbolinks'
 gem 'typhoeus'
@@ -32,7 +32,7 @@ gem 'bugsnag'
 gem 'jwt'
 gem 'oj'
 gem 'yard', require: false
-gem 'commonmarker'
+gem 'commonmarker', '>= 0.23.4'
 gem 'pg', '1.2.3'
 
 group :development, :test do
