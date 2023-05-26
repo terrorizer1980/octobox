@@ -32,7 +32,7 @@ gem 'bugsnag'
 gem 'jwt'
 gem 'oj'
 gem 'yard', require: false
-gem 'commonmarker'
+gem 'commonmarker', '>= 0.23.9'
 gem 'pg', '1.2.3'
 
 group :development, :test do
