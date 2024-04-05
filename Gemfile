@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '6.0.3.4'
-gem 'bootstrap'
+gem 'rails', '7.0.8.1'
+gem 'bootstrap', '>= 4.5.3'
 gem 'attr_encrypted'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.5.0'
 gem 'pagy'
 gem 'local_time'
-gem 'octicons_helper', '9.6.0'
+gem 'octicons_helper', '10.0.0'
 gem 'octokit'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 gem 'puma'
 gem 'sassc-rails'
 gem 'turbolinks'
@@ -21,23 +21,23 @@ gem 'jbuilder'
 gem 'rake', require: false
 gem 'git'
 gem 'rgb'
-gem 'sidekiq'
-gem 'sidekiq-unique-jobs'
-gem 'sidekiq-scheduler', require: false
-gem 'rack-canonical-host'
-gem 'sidekiq-status'
+gem 'sidekiq', '>= 6.1.3'
+gem 'sidekiq-unique-jobs', '>= 7.1.33'
+gem 'sidekiq-scheduler', '>= 3.1.0', require: false
+gem 'rack-canonical-host', '>= 1.1.0'
+gem 'sidekiq-status', '>= 2.0.0'
 gem 'gemoji', require: false
 gem 'bootsnap', require: false
 gem 'bugsnag'
 gem 'jwt'
 gem 'oj'
-gem 'yard', require: false
+gem 'yard', '>= 0.9.35', require: false
 gem 'commonmarker'
 gem 'pg', '1.2.3'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.8.0'
   gem 'guard'
   gem 'guard-minitest'
   gem 'rails-controller-testing'
@@ -54,18 +54,18 @@ group :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 4.1.0'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'brakeman'
   gem 'bullet'
   gem 'binding_of_caller'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.9.0'
 end
 
 group :production do
   gem 'skylight', '4.3.1'
-  gem 'lograge'
+  gem 'lograge', '>= 0.12.0'
   gem 'puma_worker_killer'
 end
